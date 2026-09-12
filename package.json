@@ -1,0 +1,37 @@
+{
+  "name": "def-locker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "solhint": "solhint -f table 'contracts/**/*.sol'",
+    "sol:format:check": "prettier --check --plugin=prettier-plugin-solidity 'contracts/**/*.sol'",
+    "sol:format:write": "prettier --write --plugin=prettier-plugin-solidity 'contracts/**/*.sol'",
+    "format:check": "prettier --check .",
+    "node:local": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy-local.ts --network localhost",
+    "deploy:bscTestnet": "hardhat ignition deploy ignition/modules/TokenLockModule.ts --network bscTestnet --parameters ignition/parameters/bscTestnet.json",
+    "verify:bscTestnet": "hardhat ignition verify chain-97",
+    "deploy:bsc": "hardhat ignition deploy ignition/modules/TokenLockModule.ts --network bsc --parameters ignition/parameters/bsc.json",
+    "verify:bsc": "hardhat ignition verify chain-56"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@nomiclabs/hardhat-solhint": "^4.0.2",
+    "@types/node": "^22.15.34",
+    "dotenv": "^17.0.0",
+    "ethers": "^6.14.4",
+    "hardhat": "^2.25.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-solidity": "^2.0.0",
+    "solhint": "^5.2.0",
+    "solidity-coverage": "^0.8.16",
+    "typescript": "^5.8.3"
+  }
+}
