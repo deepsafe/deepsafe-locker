@@ -62,7 +62,7 @@ h2 { margin: 0; font-size: 28px; letter-spacing: 0; }
 .network-warning, .message { display: flex; align-items: center; gap: 10px; padding: 13px 16px; font-size: 12px; }
 .network-warning { background: #f8d887; }
 .network-warning button { margin-left: auto; border: 0; border-bottom: 1px solid; background: transparent; cursor: pointer; font-weight: 700; }
-.messages { position: fixed; z-index: 20; right: clamp(24px, 4vw, 56px); bottom: clamp(24px, 4vw, 48px); width: min(420px, calc(100% - 48px)); display: grid; gap: 8px; }
+.messages { position: fixed; z-index: 40; right: clamp(24px, 4vw, 56px); bottom: clamp(24px, 4vw, 48px); width: min(420px, calc(100% - 48px)); display: grid; gap: 8px; }
 .message { min-width: 0; background: var(--ink); color: white; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
 .message > svg { flex: 0 0 auto; }
 .message span { min-width: 0; line-height: 1.45; overflow-wrap: anywhere; }
